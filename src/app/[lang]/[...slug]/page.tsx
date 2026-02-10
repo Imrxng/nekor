@@ -1,4 +1,3 @@
-// src/app/[lang]/[...slug]/page.tsx
 import { redirect } from 'next/navigation';
 
 interface Props {
@@ -6,11 +5,10 @@ interface Props {
 }
 
 export default async function NotFound({ params }: Props) {
-  const { lang } = await params; // ✅ unwrap de promise
+  const { lang } = await params; 
 
   const supportedLangs = ['nl', 'fr', 'ar'];
   const finalLang = supportedLangs.includes(lang) ? lang : 'nl';
 
-  // redirect naar de juiste taal
   redirect(`/${finalLang}`);
 }

@@ -5,10 +5,8 @@ export default async function RootPage() {
   const supportedLangs = ['nl', 'fr', 'ar'];
   const defaultLang = 'nl';
 
-  // ✅ headers() is Promise → await het
   const headerList = await headers();
 
-  // .get() werkt nu
   const acceptLang = headerList.get('accept-language') ?? '';
   const browserLang = acceptLang.split(',')[0].split('-')[0];
 

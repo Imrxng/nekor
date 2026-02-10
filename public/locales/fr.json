@@ -1,4 +1,13 @@
 {
   "title": "Bienvenue sur mon site",
-  "description": "Ceci est un exemple de site web multilingue."
+  "description": "Ceci est un site exemple avec plusieurs langues.",
+  "menu": {
+    "home": "Accueil",
+    "diensten": "Services",
+    "dienstenLinks": [
+      { "label": "Jusqu'à 3,5 tonnes – dépannage & remorquage", "href": "#vans" },
+      { "label": "Transport international", "href": "#international" }
+    ],
+    "contact": "Contact"
+  }
 }

@@ -1,4 +1,13 @@
 {
-  "title": "Welkom op mijn site",
-  "description": "Dit is een voorbeeld website met meerdere talen."
+  "title": "Nekor – Transport & Depannagee",
+  "description": "Dit is een voorbeeld website met meerdere talen.",
+  "menu": {
+    "home": "Home",
+    "diensten": "Diensten",
+    "dienstenLinks": [
+      { "label": "Tot 3,5 ton – depannage & takeldienst", "href": "#vans" },
+      { "label": "Internationaal transport", "href": "#international" }
+    ],
+    "contact": "Contact"
+  }
 }

@@ -1,6 +1,16 @@
 import { ReactNode } from 'react';
-import Nav from '../components/nav';
 import { Metadata } from 'next';
+import '@/styles/reset.css';
+import '@/styles/globals.css';
+import Header from '../../components/partials/header';
+import { Roboto } from 'next/font/google';
+
+const roboto = Roboto({
+  subsets: ['latin'],
+  weight: ['100','300','400','500','700','900'], 
+  variable: '--font-roboto',
+});
+
 
 export const metadata: Metadata = {
   alternates: {
@@ -23,9 +33,8 @@ export default async function LangLayout({
   const dir = lang === 'ar' ? 'rtl' : 'ltr';
 
   return (
-    <html lang={lang} dir={dir}>
-      <body style={{ fontFamily: 'sans-serif', padding: 20 }}>
-        <Nav currentLang={lang} />
+    <html  lang={lang === 'nl' ? 'nl-BE' : lang === 'fr' ? 'fr-BE' : 'ar'} dir={dir}>
+      <body className={roboto.className}>
         {children}
       </body>
     </html>

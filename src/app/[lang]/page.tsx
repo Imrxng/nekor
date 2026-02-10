@@ -1,14 +1,15 @@
-// src/app/[lang]/page.tsx
 import fs from 'fs';
 import path from 'path';
 import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
+import Header from '@/components/partials/header';
+import landing from '@/assets/images/landingpage.webp';
+import Image from 'next/image';
 
 interface Props {
   params: Promise<{ lang: string }>;
 }
 
-// ✅ Async generateMetadata om dezelfde JSON te gebruiken
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { lang } = await params;
 
@@ -41,9 +42,11 @@ export default async function Page({ params }: Props) {
   const content = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
 
   return (
-    <main>
-      <h1>{content.title}</h1>
-      <p>{content.description}</p>
-    </main>
+    <>
+      <Header currentLang={lang} content={content}/>
+      <main>
+        <Image src={landing} alt="Landing page" style={{width: '100%', height: '80vh', objectFit: 'cover'}}/>
+      </main>
+    </>
   );
 }
