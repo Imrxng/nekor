@@ -1,4 +1,5 @@
 'use client';
+import '@/styles/header.component.css';
 
 import { useState } from 'react';
 import Nav from '../nav';
@@ -6,6 +7,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
 import logo from '@/assets/images/logo-white.webp';
+import WhatsAppButton from '../wathsappButton';
 
 interface HeaderProps {
   currentLang: string;
@@ -62,6 +64,7 @@ const Header = ({ currentLang, content }: HeaderProps) => {
       </div>
 
       <Nav currentLang={currentLang} />
+      <WhatsAppButton />
     </header>
   );
 };

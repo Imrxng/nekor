@@ -3,8 +3,7 @@ import path from 'path';
 import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
 import Header from '@/components/partials/header';
-import landing from '@/assets/images/landingpage.webp';
-import Image from 'next/image';
+import Main from '@/components/partials/main';
 
 interface Props {
   params: Promise<{ lang: string }>;
@@ -44,9 +43,7 @@ export default async function Page({ params }: Props) {
   return (
     <>
       <Header currentLang={lang} content={content}/>
-      <main>
-        <Image src={landing} alt="Landing page" style={{width: '100%', height: '80vh', objectFit: 'cover'}}/>
-      </main>
+      <Main content={content} />
     </>
   );
 }
