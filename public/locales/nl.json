@@ -2,15 +2,26 @@
   "title": "Nekor – Transport & Depannage",
   "description": "Dit is een voorbeeld website met meerdere talen.",
   "hero": {
-    "title": [
-      "Takeldienst & Depannage",
-      "Nekor"
-    ],
+    "title": ["Takeldienst & Depannage", "Nekor"],
     "phone": "0472123456",
     "callButton": "Bel ons nu",
     "servicesButton": "Bekijk alle diensten",
     "servicesLink": "#diensten"
   },
+  "services": [
+    {
+      "titel": "Takeldienst",
+      "beschrijving": "Takelen van personenwagens, bestelwagens tot 3,5 ton, motoren en mobilhomes, ook over langere afstanden."
+    },
+    {
+      "titel": "Depannage ter plaatse",
+      "beschrijving": "Onverwachte pech? Wij staan klaar om alles in goede banen te leiden."
+    },
+    {
+      "titel": "Snelle interventies",
+      "beschrijving": "Snelle en betrouwbare interventies in Antwerpen en de ruime regio, 24/7 bereikbaar."
+    }
+  ],
   "menu": {
     "home": "Home",
     "diensten": "Diensten",

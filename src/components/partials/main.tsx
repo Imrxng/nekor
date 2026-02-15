@@ -1,72 +1,35 @@
-import Image from 'next/image';
-import landing from '@/assets/images/landingpage.webp';
-import '@/styles/main.component.css';
-import Link from 'next/link';
-import { FaPhoneAlt } from 'react-icons/fa';
+import Diensten from '../diensten';
+import Hero from '../hero';
+
+interface Service {
+  titel: string;
+  beschrijving: string;
+}
+
+interface HeroContent {
+  title: string[];
+  phone: string;
+  callButton: string;
+  servicesButton: string;
+  servicesLink: string;
+}
 
 interface MainProps {
-    content: {
-        hero: {
-            title: string[];
-            phone: string;
-            callButton: string;
-            servicesButton: string;
-            servicesLink: string;
-        };
-        menu: {
-            home: string;
-            diensten: string;
-            dienstenLinks: { label: string; href: string }[];
-            contact: string;
-        };
-    };
+  content: {
+    hero: HeroContent;
+    services: Service[];
+  };
 }
 
 const Main = ({ content }: MainProps) => {
-    const { hero } = content;
+  const { hero, services } = content;
 
-    return (
-        <main>
-            <figure className="intro-picture">
-                <Image
-                    src={landing}
-                    alt={hero.title.join(' ')}
-                    fill
-                    priority
-                    className="hero-img"
-                />
-
-                <div className="overlay" />
-
-                <div className="hero-content">
-                    <h1>
-                        {hero.title.map((line, index) => (
-                            <span key={index}>
-                                {line}
-                                {index < hero.title.length - 1 && <br />}
-                            </span>
-                        ))}
-                    </h1>
-
-                    <div className="intro-buttons-container">
-                        <div className="bel-ons-button">
-                            <FaPhoneAlt />
-                            <Link href={`tel:${hero.phone}`}>
-                                {hero.callButton}
-                            </Link>
-                        </div>
-
-                        <Link
-                            href={`/nl${hero.servicesLink}`}
-                            className="bekijk-diensten-button"
-                        >
-                            {hero.servicesButton}
-                        </Link>
-                    </div>
-                </div>
-            </figure>
-        </main>
-    );
+  return (
+    <main>
+      <Hero hero={hero} />
+      <Diensten services={services} />
+    </main>
+  );
 };
 
 export default Main;

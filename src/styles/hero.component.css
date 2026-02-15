@@ -1,0 +1,76 @@
+.intro-picture {
+    position: relative;
+    width: 100%;
+    height: 82vh;
+    overflow: hidden;
+}
+
+/* image */
+.hero-img {
+    object-fit: cover;
+    z-index: 0;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.6); 
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: bolder;
+}
+
+
+.bekijk-diensten-button {
+    background-color: var(--dark-blue);
+}
+
+.bekijk-diensten-button, .bel-ons-button {
+    padding: 0.75rem 1.5rem;
+    border-radius: 10px;
+    width: 200px;
+    font-weight: bolder;
+    display: inline-block;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+.bel-ons-button {
+    background-color: var(--dark-red);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.bel-ons-button:hover {
+    color: var(--dark-red);
+    background-color: #eee;
+    transition-duration: 0.5s;
+}
+.bekijk-diensten-button:hover {
+    color: var(--dark-blue);
+    background-color: #eee;
+    transition-duration: 0.5s;
+}
+
+.intro-buttons-container {
+    display: flex;
+    gap: 1rem;
+}
