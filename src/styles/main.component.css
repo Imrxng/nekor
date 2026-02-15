@@ -36,9 +36,6 @@
     font-weight: bolder;
 }
 
-.bel-ons-button {
-    background-color: var(--dark-red);
-}
 
 .bekijk-diensten-button {
     background-color: var(--dark-blue);
@@ -50,6 +47,27 @@
     width: 200px;
     font-weight: bolder;
     display: inline-block;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+.bel-ons-button {
+    background-color: var(--dark-red);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.bel-ons-button:hover {
+    color: var(--dark-red);
+    background-color: #eee;
+    transition-duration: 0.5s;
+}
+.bekijk-diensten-button:hover {
+    color: var(--dark-blue);
+    background-color: #eee;
+    transition-duration: 0.5s;
 }
 
 .intro-buttons-container {

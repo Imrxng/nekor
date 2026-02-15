@@ -1,6 +1,16 @@
 {
-  "title": "Nekor – Transport & Depannagee",
+  "title": "Nekor – Transport & Depannage",
   "description": "Dit is een voorbeeld website met meerdere talen.",
+  "hero": {
+    "title": [
+      "Takeldienst & Depannage",
+      "Nekor"
+    ],
+    "phone": "0472123456",
+    "callButton": "Bel ons nu",
+    "servicesButton": "Bekijk alle diensten",
+    "servicesLink": "#diensten"
+  },
   "menu": {
     "home": "Home",
     "diensten": "Diensten",

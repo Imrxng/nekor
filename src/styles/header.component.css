@@ -25,11 +25,13 @@ header>img {
   gap: 20px;
   font-weight: bolder;
 }
+.menu>a:hover {
+  color: var(--dark-red);
+}
 
 .nav {
   justify-self: end;
 }
-
 
 /* ===== DIENSTEN ===== */
 
@@ -126,3 +128,24 @@ header>img {
   font-weight: 700;
   background-color: #eee;
 }
+
+.diensten-popup a:first-child {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.diensten-popup a:last-child {
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.lang-popup a:first-child {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.lang-popup a:last-child {
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
