@@ -1,3 +1,4 @@
+import Content from '../content';
 import Diensten from '../diensten';
 import Hero from '../hero';
 
@@ -28,6 +29,7 @@ const Main = ({ content }: MainProps) => {
     <main>
       <Hero hero={hero} />
       <Diensten services={services} />
+      <Content />
     </main>
   );
 };

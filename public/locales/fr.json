@@ -1,12 +1,42 @@
 {
-  "title": "Bienvenue sur mon site",
-  "description": "Ceci est un site exemple avec plusieurs langues.",
+  "title": "Nekor – Transport & Dépannage",
+  "description": "Ceci est un site exemple disponible en plusieurs langues.",
+  "hero": {
+    "title": [
+      "Service de remorquage & Dépannage",
+      "Nekor"
+    ],
+    "phone": "0472123456",
+    "callButton": "Appelez-nous maintenant",
+    "servicesButton": "Voir tous les services",
+    "servicesLink": "#diensten"
+  },
+  "services": [
+    {
+      "titel": "Service de remorquage",
+      "beschrijving": "Service de remorquage professionnel pour voitures particulières, fourgonnettes jusqu'à 3,5 tonnes, motos et camping-cars. Nous offrons un transport sûr et fiable des véhicules partout en Belgique et à l'international, y compris sur de longues distances."
+    },
+    {
+      "titel": "Dépannage sur place",
+      "beschrijving": "Panne imprévue à Anvers ? Notre équipe est disponible 24h/24 et 7j/7 pour un dépannage rapide sur place, afin que votre véhicule puisse être déplacé en toute sécurité dans la ville et ses environs immédiats."
+    },
+    {
+      "titel": "Interventions rapides",
+      "beschrijving": "Interventions rapides et efficaces en cas de panne à Anvers et ses environs. Nous veillons à ce que les véhicules soient récupérés ou déplacés en toute sécurité et fiabilité, à tout moment du jour ou de la nuit."
+    }
+  ],
   "menu": {
     "home": "Accueil",
     "diensten": "Services",
     "dienstenLinks": [
-      { "label": "Jusqu'à 3,5 tonnes – dépannage & remorquage", "href": "#vans" },
-      { "label": "Transport international", "href": "#international" }
+      {
+        "label": "Jusqu'à 3,5 tonnes – dépannage & remorquage",
+        "href": "#vans"
+      },
+      {
+        "label": "Transport international",
+        "href": "#international"
+      }
     ],
     "contact": "Contact"
   }

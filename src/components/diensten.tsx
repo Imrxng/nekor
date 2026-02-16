@@ -1,6 +1,8 @@
+import React from 'react';
 import Card from './card';
 import { GiTowTruck } from 'react-icons/gi';
 import { FaClock, FaExclamationTriangle } from 'react-icons/fa';
+import '@/styles/diensten.component.css';
 
 interface Service {
   titel: string;
@@ -15,9 +17,9 @@ const iconMap = [GiTowTruck, FaExclamationTriangle, FaClock];
 
 const Diensten = ({ services }: DienstenProps) => {
   return (
-    <div>
-      <h2>Diensten</h2>
-      <div >
+    <div className='diensten-container'>
+      <h2 className='diensten-titel'>Diensten</h2>
+      <div className='card-diensten-container'>
         {services.map((service, index) => {
           const IconComponent = iconMap[index] || FaClock; 
           return (

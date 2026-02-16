@@ -1,0 +1,35 @@
+.content-block {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.content-block .content-image {
+  flex: 1 1 300px;
+  max-width: 600px;
+  max-height: 400px;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: contain;
+}
+
+.content-block .content-text {
+  flex: 1 1 300px;
+}
+
+
+@media (max-width: 768px) {
+  .content-block {
+    flex-direction: column;
+  }
+  .content-block.reverse {
+    flex-direction: column;
+  }
+  .content-block .content-image,
+  .content-block .content-text {
+    flex: 1 1 100%;
+  }
+}

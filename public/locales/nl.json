@@ -2,7 +2,10 @@
   "title": "Nekor – Transport & Depannage",
   "description": "Dit is een voorbeeld website met meerdere talen.",
   "hero": {
-    "title": ["Takeldienst & Depannage", "Nekor"],
+    "title": [
+      "Takeldienst & Depannage",
+      "Nekor"
+    ],
     "phone": "0472123456",
     "callButton": "Bel ons nu",
     "servicesButton": "Bekijk alle diensten",
@@ -11,23 +14,29 @@
   "services": [
     {
       "titel": "Takeldienst",
-      "beschrijving": "Takelen van personenwagens, bestelwagens tot 3,5 ton, motoren en mobilhomes, ook over langere afstanden."
+      "beschrijving": "Professionele takeldienst voor personenwagens, bestelwagens tot 3,5 ton, motoren en mobilhomes. Wij bieden veilig en betrouwbaar transport van voertuigen over heel België en internationaal, ook over langere afstanden."
     },
     {
       "titel": "Depannage ter plaatse",
-      "beschrijving": "Onverwachte pech? Wij staan klaar om alles in goede banen te leiden."
+      "beschrijving": "Onverwachte pech in Antwerpen? Ons team staat 24/7 klaar voor snelle depannage ter plaatse, zodat uw voertuig veilig kan worden verplaatst binnen de stad en directe omgeving."
     },
     {
       "titel": "Snelle interventies",
-      "beschrijving": "Snelle en betrouwbare interventies in Antwerpen en de ruime regio, 24/7 bereikbaar."
+      "beschrijving": "Snelle en efficiënte interventies bij pechgevallen in Antwerpen en omgeving. Wij zorgen ervoor dat voertuigen veilig en betrouwbaar worden opgehaald of verplaatst, op elk moment van de dag of nacht."
     }
   ],
   "menu": {
     "home": "Home",
     "diensten": "Diensten",
     "dienstenLinks": [
-      { "label": "Tot 3,5 ton – depannage & takeldienst", "href": "#vans" },
-      { "label": "Internationaal transport", "href": "#international" }
+      {
+        "label": "Tot 3,5 ton – depannage & takeldienst",
+        "href": "#vans"
+      },
+      {
+        "label": "Internationaal transport",
+        "href": "#international"
+      }
     ],
     "contact": "Contact"
   }
