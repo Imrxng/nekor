@@ -1,0 +1,102 @@
+.contact {
+    padding: 0 2rem 3rem 2rem;
+    color: var(--dark-blue);
+    background-color: var(--grey);
+}
+
+.contact-title {
+    padding: 2rem 0;
+    padding-bottom: 1rem;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: bolder;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-group>label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-group>input, .form-group>textarea {
+    border: 1px solid var(--dark-blue);
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+    padding: 8px;
+}
+
+.form-button {
+    background-color: var(--dark-blue);
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 10px;
+    font-weight: bolder;
+    cursor: pointer;
+    margin-top: 1.5rem;
+}
+
+.contact-card {
+    background-color: #eae9e9;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.contact-info-text {
+    font-weight: bolder;
+    padding: 3rem 0 0.5rem 0;
+}
+
+.contact-card>div {
+    display: flex;
+    gap: 0.5rem;
+    font-weight: bolder;
+}
+
+
+.contact-card>div>svg {
+    font-size: 1.2rem;
+}
+
+.form-button {
+  position: relative;
+  min-width: 120px;
+}
+
+.spinner {
+  width: 18px;
+  height: 18px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-top: 3px solid white;
+  border-radius: 50%;
+  display: inline-block;
+  animation: spin 0.7s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.form-button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.success-text {
+  margin-top: 10px;
+  color: green;
+  font-weight: 500;
+}

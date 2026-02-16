@@ -24,13 +24,30 @@ interface HeaderProps {
 const Header = ({ currentLang, content }: HeaderProps) => {
   const [openDiensten, setOpenDiensten] = useState(false);
 
+  const handleScroll = (hash: string) => {
+    const element = document.getElementById(hash);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <header className="header">
       <Image src={logo} alt="logo" className="logo" />
 
       <div className="menu">
-        <Link href={`/${currentLang}#home`}>{content.menu.home}</Link>
+        {/* Home link */}
+        <Link
+          href={`/${currentLang}#home`}
+          onClick={(e) => {
+            e.preventDefault();
+            handleScroll('home');
+          }}
+        >
+          {content.menu.home}
+        </Link>
 
+        {/* Diensten dropdown */}
         <div
           className="diensten-wrapper"
           onMouseEnter={() => setOpenDiensten(true)}
@@ -51,7 +68,11 @@ const Header = ({ currentLang, content }: HeaderProps) => {
                 <Link
                   key={link.href}
                   href={`/${currentLang}${link.href}`}
-                  onClick={() => setOpenDiensten(false)}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleScroll(link.href.replace('#', ''));
+                    setOpenDiensten(false);
+                  }}
                 >
                   {link.label}
                 </Link>
@@ -60,7 +81,16 @@ const Header = ({ currentLang, content }: HeaderProps) => {
           )}
         </div>
 
-        <Link href={`/${currentLang}#contact`}>{content.menu.contact}</Link>
+        {/* Contact link */}
+        <Link
+          href={`/${currentLang}#contact`}
+          onClick={(e) => {
+            e.preventDefault();
+            handleScroll('contact');
+          }}
+        >
+          {content.menu.contact}
+        </Link>
       </div>
 
       <Nav currentLang={currentLang} />

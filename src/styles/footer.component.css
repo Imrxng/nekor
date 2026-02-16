@@ -1,0 +1,10 @@
+footer {
+    background-color: var(--dark-blue);
+    color: white;
+    font-weight: bolder;
+    padding: 3rem;
+}
+
+footer p {
+    text-align: center;
+}

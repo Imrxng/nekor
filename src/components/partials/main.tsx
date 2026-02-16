@@ -1,3 +1,4 @@
+import Contact from '../contact';
 import Content from '../content';
 import Diensten from '../diensten';
 import Hero from '../hero';
@@ -15,21 +16,43 @@ interface HeroContent {
   servicesLink: string;
 }
 
+interface ContentBlock {
+  title: string;
+  description: string;
+  reverse?: boolean;
+}
+
+interface ContactText {
+  title: string;
+  name: string;
+  email: string;
+  subject: string;
+  message: string;
+  send: string;
+  infoText: string;
+  phoneLabel: string;
+  emailLabel: string;
+}
+
 interface MainProps {
   content: {
     hero: HeroContent;
     services: Service[];
+    contentBlocks: ContentBlock[];
+    contact: ContactText;
   };
+  currentLanguage: string;
 }
 
-const Main = ({ content }: MainProps) => {
-  const { hero, services } = content;
+const Main = ({ content, currentLanguage }: MainProps) => {
+  const { hero, services, contentBlocks, contact } = content;
 
   return (
     <main>
       <Hero hero={hero} />
       <Diensten services={services} />
-      <Content />
+      <Content blocks={contentBlocks} />
+      <Contact contact={contact} currentLanguage={currentLanguage} />
     </main>
   );
 };

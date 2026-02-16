@@ -1,0 +1,44 @@
+import '@/styles/contact.component.css';
+import { FaPhoneAlt } from 'react-icons/fa';
+import { IoMail } from 'react-icons/io5';
+import ContactForm from './contactForm';
+
+interface ContactProps {
+  contact: {
+    title: string;
+    infoText: string;
+    phoneLabel: string;
+    emailLabel: string;
+  };
+  currentLanguage: string;
+}
+
+export const Contact = ({ contact, currentLanguage }: ContactProps) => {
+  return (
+    <section className="contact" id="contact">
+      <h2 className="contact-title">{contact.title}</h2>
+
+      <ContactForm currentLanguage={currentLanguage} />
+
+      <p className="contact-info-text">{contact.infoText}</p>
+
+      <div className="contact-card">
+        <div>
+          <FaPhoneAlt />
+          <p>{contact.phoneLabel}</p>
+        </div>
+        <a href="tel:+32495647686">+32 495 64 76 86</a>
+      </div>
+
+      <div className="contact-card">
+        <div>
+          <IoMail />
+          <p>{contact.emailLabel}</p>
+        </div>
+        <a href="mailto:info@nekor.nl">info@nekor.nl</a>
+      </div>
+    </section>
+  );
+};
+
+export default Contact;

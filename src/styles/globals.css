@@ -3,3 +3,11 @@
     --dark-red: #840000;
     --grey: #F5F5F5;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+.red {
+    color: var(--dark-red);
+}

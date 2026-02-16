@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
 import Header from '@/components/partials/header';
 import Main from '@/components/partials/main';
+import Footer from '@/components/footer';
 
 interface Props {
   params: Promise<{ lang: string }>;
@@ -43,7 +44,8 @@ export default async function Page({ params }: Props) {
   return (
     <>
       <Header currentLang={lang} content={content}/>
-      <Main content={content} />
+      <Main currentLanguage={lang} content={content} />
+      <Footer />
     </>
   );
 }

@@ -6,7 +6,7 @@
 
 .diensten-titel {
     text-align: center;
-    font-size: 25px;
+    font-size: 2rem;
     font-weight: bolder;
     color: var(--dark-blue);
 }
