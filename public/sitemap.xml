@@ -2,17 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
-    <loc>https://jouwdomein.com/nl</loc>
+    <loc>https://nekor.be/nl</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://jouwdomein.com/fr</loc>
+    <loc>https://nekor.be/fr</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://jouwdomein.com/ar</loc>
+    <loc>https://nekor.be/ar</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

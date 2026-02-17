@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       title: content.title,
       description: content.description,
-      url: `https://jouwdomein.com/${lang}`,
+      url: `https://nekor.be/${lang}`,
       locale: lang,
       type: 'website',
     },
@@ -45,7 +45,7 @@ export default async function Page({ params }: Props) {
     <>
       <Header currentLang={lang} content={content}/>
       <Main currentLanguage={lang} content={content} />
-      <Footer />
+      <Footer currentLanguage={lang} />
     </>
   );
 }

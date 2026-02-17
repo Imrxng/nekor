@@ -2,23 +2,22 @@ import { ReactNode } from 'react';
 import { Metadata } from 'next';
 import '@/styles/reset.css';
 import '@/styles/globals.css';
-import Header from '../../components/partials/header';
 import { Roboto } from 'next/font/google';
 
 const roboto = Roboto({
   subsets: ['latin'],
-  weight: ['100','300','400','500','700','900'], 
+  weight: ['100', '300', '400', '500', '700', '900'],
   variable: '--font-roboto',
 });
 
 
 export const metadata: Metadata = {
   alternates: {
-    canonical: "https://jouwdomein.com/nl",
+    canonical: "https://nekor.be/nl",
     languages: {
-      nl: "https://jouwdomein.com/nl",
-      fr: "https://jouwdomein.com/fr",
-      ar: "https://jouwdomein.com/ar"
+      nl: "https://nekor.be/nl",
+      fr: "https://nekor.be/fr",
+      ar: "https://nekor.be/ar"
     }
   }
 }
@@ -33,7 +32,7 @@ export default async function LangLayout({
   const dir = lang === 'ar' ? 'rtl' : 'ltr';
 
   return (
-    <html  lang={lang === 'nl' ? 'nl-BE' : lang === 'fr' ? 'fr-BE' : 'ar'} dir={dir}>
+    <html lang={lang === 'nl' ? 'nl-BE' : lang === 'fr' ? 'fr-BE' : 'ar'} dir={dir}>
       <body className={roboto.className}>
         {children}
       </body>

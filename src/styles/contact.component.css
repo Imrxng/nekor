@@ -20,7 +20,7 @@
 
 .form-group>label {
     margin-bottom: 0.5rem;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 .form-group>input, .form-group>textarea {
@@ -51,6 +51,12 @@
     align-items: center;
     padding: 1rem;
     margin: 1rem 0;
+    width: 100%;
+}
+
+.contact-cards-container {
+  display: flex;
+  gap: 5rem;
 }
 
 .contact-info-text {
@@ -99,4 +105,24 @@
   margin-top: 10px;
   color: green;
   font-weight: 500;
+}
+
+.error-text {
+  margin-top: 10px;
+  color: var(--dark-red);
+  font-weight: 500;
+}
+
+
+@media (max-width: 768px) {
+  .contact-cards-container {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 620px) {
+  .contact-cards-container {
+    flex-direction: column;
+    gap: 0;
+  }
 }

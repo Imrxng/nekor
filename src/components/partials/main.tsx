@@ -40,17 +40,18 @@ interface MainProps {
     services: Service[];
     contentBlocks: ContentBlock[];
     contact: ContactText;
+    diensten: string;
   };
   currentLanguage: string;
 }
 
 const Main = ({ content, currentLanguage }: MainProps) => {
-  const { hero, services, contentBlocks, contact } = content;
+  const { hero, services, contentBlocks, contact, diensten } = content;
 
   return (
     <main>
       <Hero hero={hero} />
-      <Diensten services={services} />
+      <Diensten services={services} diensten={diensten} />
       <Content blocks={contentBlocks} />
       <Contact contact={contact} currentLanguage={currentLanguage} />
     </main>

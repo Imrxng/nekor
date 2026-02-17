@@ -1,43 +1,61 @@
 {
   "title": "Nekor – Transport & Dépannage",
-  "description": "Ceci est un site exemple disponible en plusieurs langues.",
+  "description": "Ceci est un site exemple avec plusieurs langues.",
   "hero": {
-    "title": [
-      "Service de remorquage & Dépannage",
-      "Nekor"
-    ],
-    "phone": "0472123456",
+    "title": ["Service de remorquage & Dépannage", "Nekor"],
+    "phone": "+32495647686",
     "callButton": "Appelez-nous maintenant",
     "servicesButton": "Voir tous les services",
     "servicesLink": "#diensten"
   },
   "services": [
     {
-      "titel": "Service de remorquage",
-      "beschrijving": "Service de remorquage professionnel pour voitures particulières, fourgonnettes jusqu'à 3,5 tonnes, motos et camping-cars. Nous offrons un transport sûr et fiable des véhicules partout en Belgique et à l'international, y compris sur de longues distances."
+      "titel": "Remorquage",
+      "beschrijving": "Service professionnel de remorquage pour voitures particulières, véhicules utilitaires jusqu'à 3,5 tonnes, motos et camping-cars. Nous assurons un transport sûr et fiable des véhicules en Belgique et à l'international, y compris sur de longues distances."
     },
     {
       "titel": "Dépannage sur place",
-      "beschrijving": "Panne imprévue à Anvers ? Notre équipe est disponible 24h/24 et 7j/7 pour un dépannage rapide sur place, afin que votre véhicule puisse être déplacé en toute sécurité dans la ville et ses environs immédiats."
+      "beschrijving": "Panne imprévue à Anvers ? Notre équipe est disponible 24h/24 et 7j/7 pour un dépannage rapide sur place, garantissant que votre véhicule soit déplacé en toute sécurité dans la ville et ses environs immédiats."
     },
     {
       "titel": "Interventions rapides",
-      "beschrijving": "Interventions rapides et efficaces en cas de panne à Anvers et ses environs. Nous veillons à ce que les véhicules soient récupérés ou déplacés en toute sécurité et fiabilité, à tout moment du jour ou de la nuit."
+      "beschrijving": "Interventions rapides et efficaces en cas de panne à Anvers et alentours. Nous nous assurons que les véhicules soient récupérés ou déplacés de manière sûre et fiable, à tout moment de la journée ou de la nuit."
+    }
+  ],
+  "diensten": "Services",
+  "contentBlocks": [
+    {
+      "title": "Voitures particulières, motos & deux-roues",
+      "description": "Nous proposons des services de remorquage et de dépannage pour voitures, motos, cyclomoteurs et vélos. En cas de panne, nous essayons d'abord de résoudre le problème sur place. Si ce n'est pas possible, nous assurons un remorquage sûr et professionnel vers un garage ou un lieu de votre choix."
+    },
+    {
+      "title": "Véhicules utilitaires jusqu'à 3,5 tonnes & camping-cars",
+      "description": "Pour les véhicules utilitaires jusqu'à 3,5 tonnes et les camping-cars, vous pouvez compter sur notre service de remorquage et de dépannage. Nous aidons en cas de panne ou de problème technique et assurons le transport approprié, local ou sur de longues distances si nécessaire.",
+      "reverse": true
+    },
+    {
+      "title": "Transport national & international",
+      "description": "En plus des interventions locales, nous assurons également le transport de véhicules au niveau national et international. Votre véhicule est transporté en toute sécurité et professionnalisme vers toute destination souhaitée, en Belgique comme à l'étranger."
     }
   ],
   "menu": {
     "home": "Accueil",
     "diensten": "Services",
     "dienstenLinks": [
-      {
-        "label": "Jusqu'à 3,5 tonnes – dépannage & remorquage",
-        "href": "#vans"
-      },
-      {
-        "label": "Transport international",
-        "href": "#international"
-      }
+      {"label": "Jusqu'à 3,5 tonnes – dépannage & remorquage", "href": "#depannage-takeldienst"},
+      {"label": "Transport international", "href": "#internationaal"}
     ],
     "contact": "Contact"
+  },
+  "contact": {
+    "title": "Contact",
+    "name": "Nom",
+    "email": "E-mail",
+    "subject": "Sujet",
+    "message": "Message",
+    "send": "Envoyer",
+    "infoText": "Vous pouvez également nous contacter directement via :",
+    "phoneLabel": "Téléphone :",
+    "emailLabel": "Email :"
   }
 }

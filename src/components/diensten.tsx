@@ -11,17 +11,18 @@ interface Service {
 
 interface DienstenProps {
   services: Service[];
+  diensten: string;
 }
 
-const iconMap = [GiTowTruck, FaExclamationTriangle, FaClock]; 
+const iconMap = [GiTowTruck, FaExclamationTriangle, FaClock];
 
-const Diensten = ({ services }: DienstenProps) => {
+const Diensten = ({ services, diensten }: DienstenProps) => {
   return (
-    <div className='diensten-container'>
-      <h2 className='diensten-titel'>Diensten</h2>
+    <div id='diensten' className='diensten-container'>
+      <h2 className='diensten-titel'>{diensten}</h2>
       <div className='card-diensten-container'>
         {services.map((service, index) => {
-          const IconComponent = iconMap[index] || FaClock; 
+          const IconComponent = iconMap[index] || FaClock;
           return (
             <Card
               key={service.titel}

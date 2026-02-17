@@ -1,12 +1,12 @@
 
 header {
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
+  display: flex;
   align-items: center;
   margin: 1.5rem;
   color: var(--dark-blue);
   position: relative;
   z-index: 1000;
+  justify-content: space-between;
 
 }
 header>img {
@@ -149,3 +149,11 @@ header>img {
   border-bottom-right-radius: 6px;
 }
 
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+  header {
+    justify-content: space-between;
+  }
+}

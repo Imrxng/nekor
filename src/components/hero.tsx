@@ -3,6 +3,7 @@ import Link from 'next/link'
 import landing from '@/assets/images/landingpage.webp';
 import '@/styles/hero.component.css';
 import { FaPhoneAlt } from 'react-icons/fa'
+import Linkdienst from './linkDiensten';
 
 interface HeroProps {
     hero: {
@@ -45,12 +46,7 @@ const Hero = ({ hero }: HeroProps) => {
                         </Link>
                     </div>
 
-                    <Link
-                        href={`/nl${hero.servicesLink}`}
-                        className="bekijk-diensten-button"
-                    >
-                        {hero.servicesButton}
-                    </Link>
+                    <Linkdienst hero={hero} />
                 </div>
             </div>
         </figure>
