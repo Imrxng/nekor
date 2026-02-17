@@ -56,3 +56,9 @@
 .card-diensten>p{
  font-size: 17px;   
 }
+
+@media (max-width: 768px) {
+    .diensten-container {
+        padding: 2rem 1rem;
+    }
+}

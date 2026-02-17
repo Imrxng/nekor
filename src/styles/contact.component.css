@@ -118,6 +118,9 @@
   .contact-cards-container {
     gap: 2rem;
   }
+  .contact {
+    padding: 0 1rem 3rem 1rem;
+  }
 }
 
 @media (max-width: 620px) {
