@@ -13,17 +13,18 @@ const roboto = Roboto({
 
 export const metadata: Metadata = {
   alternates: {
-    canonical: "https://nekor.be/nl",
+    canonical: "https://www.nekor.be/nl",
     languages: {
-      nl: "https://nekor.be/nl",
-      fr: "https://nekor.be/fr",
-      ar: "https://nekor.be/ar"
+      nl: "https://www.nekor.be/nl",
+      fr: "https://www.nekor.be/fr",
+      ar: "https://www.nekor.be/ar"
     },
   },
   icons: {
     icon: '../favicon.ico',
   }
 }
+
 export default async function LangLayout({
   children,
   params,

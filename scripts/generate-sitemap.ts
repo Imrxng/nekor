@@ -7,7 +7,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const pages = ['nl', 'fr', 'ar'];
-const baseUrl = 'https://nekor.be';
+const baseUrl = 'https://www.nekor.be';
 
 // public folder zit één niveau hoger dan scripts
 const publicPath = path.join(__dirname, '..', 'public');

@@ -19,18 +19,31 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const filePath = path.join(process.cwd(), 'public/locales', `${lang}.json`);
   const content = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
 
+  const canonicalUrl = `https://nekor.be/${lang}`;
+
+  const alternates: Record<string, string> = {};
+  supportedLangs.forEach((l) => {
+    if (l !== lang) alternates[l] = `https://nekor.be/${l}`;
+  });
+
   return {
     title: content.title,
     description: content.description,
     openGraph: {
       title: content.title,
       description: content.description,
-      url: `https://nekor.be/${lang}`,
+      url: canonicalUrl,
       locale: lang,
       type: 'website',
     },
+    alternates: {
+      canonical: canonicalUrl,
+      languages: alternates,
+    },
   };
 }
+
+
 
 export default async function Page({ params }: Props) {
   const { lang } = await params;
