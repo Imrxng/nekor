@@ -18,7 +18,10 @@ export const metadata: Metadata = {
       nl: "https://nekor.be/nl",
       fr: "https://nekor.be/fr",
       ar: "https://nekor.be/ar"
-    }
+    },
+  },
+  icons: {
+    icon: '../favicon.ico',
   }
 }
 export default async function LangLayout({
