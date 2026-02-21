@@ -160,7 +160,7 @@ export async function POST(req: Request) {
         userMessage: `<h2 style="margin-top:0;">${userMessageHTML}</h2>`,
         message,
         website: 'www.nekor.be',
-        phone: '+32 495 64 76 86',
+        phone: '+32 485 36 38 14',
         language: language || 'nl'
       })
     });

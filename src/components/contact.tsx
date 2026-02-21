@@ -33,7 +33,7 @@ export const Contact = ({ contact, currentLanguage }: ContactProps) => {
             <FaPhoneAlt />
             <p>{contact.phoneLabel}</p>
           </div>
-          <a href="tel:+32495647686" dir='ltr'>+32 495 64 76 86</a>
+          <a href="tel:+32485363814" dir='ltr'>+32 485 36 38 14</a>
         </div>
 
         <div className="contact-card">
